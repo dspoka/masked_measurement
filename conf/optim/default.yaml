@@ -1,0 +1,19 @@
+total_train_steps: 50000
+num_training_steps: 20000 #stops here
+# num_training_steps: 10
+# num_eval_steps: 10
+lr: 1e-5
+pos_weight: 1
+save_path: saved_cpt/
+train_batch_size: 8
+eval_batch_size: 512
+parallel: False
+eval_every_n: 1000
+save_every_n: 1000
+keep_every_n: 5000
+log_every_n: 50
+num_epochs: 10
+warmup_steps: 500
+seed: 7
+# seed: 56 #debug
+max_grad_norm: 1.0

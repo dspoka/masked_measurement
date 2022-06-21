@@ -1,0 +1,4 @@
+max_seq_length: 512
+# mode: gold
+# group: sent
+# n_units: 20

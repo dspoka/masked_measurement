@@ -1,0 +1,37 @@
+paths:
+  root: ???
+  dataset_path: ???
+  unece_path: ???
+  wiki_convert_path: ???
+  save_root: ???
+  load_root: ???
+  save_dir: saved_cpt/
+  save_path: ???
+  # load_path: ???
+
+debug: False
+downstream: 'Ranking'
+# model_name: DownGen
+model_name: Gen
+# pretrained_model_name: 'r1-bi-GenmaskNUM-sem:64--lr:0.0001_sd:7'
+pretrained_model_name: 'GenmaskNUM-sem:64--lr:0.0001_sd:13'
+sem_hz: 64
+optim:
+  keep_every_n: 5000
+  seed: 7
+  lr: 1e-5
+
+do_weighted: False
+do_derived: True
+model_zsl: False
+mask_out_number: True
+mask_out_unit: True
+mask_out_dimension: True
+supervised_derived: True
+mode_inference: False
+do_num_in_SI: True
+num_classes: 2
+
+
+data_cfg:
+  max_seq_length: 128

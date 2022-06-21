@@ -1,0 +1,40 @@
+hydra:
+  job:
+    env_set:
+      TOKENIZERS_PARALLELISM: "false"
+
+defaults:
+  # - data_cfg: default
+  - optim: default
+  - pretrained: gemm
+  - _self_
+
+paths:
+  root: ???
+  dataset_path: ???
+  unece_path: ???
+  wiki_convert_path: ???
+  save_root: ???
+  load_root: ???
+  dense_index_root: ???
+  bm25_index_root: ???
+  cc_root: ???  
+  save_dir: saved_cpt/
+  save_path: ???
+  # load_dir: saved_cpt/
+  # load_path: ???
+
+# dataset: wiki
+# mode_pairs: dense #[random, dense, unigemm, bigemm]
+# stop_max: 50
+# early_metric: 'lmae'
+debug: False
+# model_name: UniPreGeMM
+# full_model_name: ???
+# pretrained_model_name: 'r1-bi-GenmaskNUM-sem:64--lr:0.0001_sd:7'
+# r1_or_r2: 'r1'
+# reranking:
+#   strategy: 'binary' #[best, binary]
+#   threshold: 1.3 # 1.0 is equal to. 1.2 is 20% better
+# data_cfg:
+#   max_seq_length: 128
